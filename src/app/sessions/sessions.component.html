@@ -1,0 +1,207 @@
+<div>
+    <div class="center tspace st box row-md-4" >
+    <h1>Sessions </h1>
+    <p>Description Goes Here</p>
+    </div>
+    <div class="row" style="background-color: white;">
+        <div class="col-md-4 cbb" >
+            <div class="menu-card">
+                <h4 class="t" style="text-align: left;">Filters</h4>
+                <hr>
+                <a class="t" >clear filter</a><br>
+                <h4 class="t" style="text-align: left;">Date</h4>
+                <div class="form-check t">
+                     <input      class="form-check-input"    type="checkbox"   value=""  id="feb 16"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="feb 16">
+                      February 16
+                    </label><br>
+                    <input      class="form-check-input"   type="checkbox"   value=""  id="feb 17"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="feb 17">
+                      February 17
+                    </label><br>
+                    <input      class="form-check-input"    type="checkbox"   value=""  id="demand"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="demand">
+                      On demand
+                    </label>
+                  </div>
+
+                  <h4 class="t" style="text-align: left;">Track</h4>
+                <div class="form-check t">
+                    <input      class="form-check-input"    type="checkbox"   value=""  id="Leading yourself"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="Leading yourself">
+                      Leading yourself
+                    </label><br>
+                    <input      class="form-check-input"   type="checkbox"   value=""  id="Leading others"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="Leading others">
+                        Leading others
+                    </label><br>
+                    <input      class="form-check-input"    type="checkbox"   value=""  id="Leading Beyond"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="Leading Beyond">
+                        Leading Beyond
+                    </label><br>
+                    <input      class="form-check-input"    type="checkbox"   value=""  id="Well Being"     />
+                    <label class="form-check-label" style="font-weight:normal;"  for="Well Being">
+                        Well Being
+                    </label>
+                  </div>
+                  <h4 class="t" style="text-align: left;">Region</h4>
+                  <div class="form-check t">
+                      <input      class="form-check-input filled-in"    type="checkbox"   value=""  id="America"     />
+                      <label class="form-check-label" style="font-weight:normal;"  for="America">
+                        America
+                      </label><br>
+                      <input      class="form-check-input"   type="checkbox"   value=""  id="Emear"     />
+                      <label class="form-check-label" style="font-weight:normal;"  for="Emear">
+                        Emear
+                      </label><br>
+                      <input      class="form-check-input"    type="checkbox"   value=""  id=" APJC"     />
+                      <label class="form-check-label" style="font-weight:normal;"  for=" APJC">
+                        APJC
+                      </label>
+                    </div>
+
+               
+                
+            </div>
+        </div>
+        <div class="col-md-8 tspace">
+            <nav class="navbar  navbar-light">
+                <a  class="navbar-brand" (click)="calllive()">Live Sessions
+
+                </a>
+                <a class="navbar-brand" (click)="calldemand()" >On Demand</a>
+                <a class="navbar-brand" (click)="callteam()" >Team Activities</a>
+                <a class="navbar-brand" (click)="callagenda()">My Agenda</a>
+                <input class="space cbb search "   type="search" placeholder="Search..">
+            
+            </nav>
+            <div *ngIf="live">
+                <h3>Showing Sessions </h3>
+                <h4>February 16</h4>
+                <h3>Live Now</h3>
+                <div class="row">
+                  <div class="col-md-5 cbb">
+                      <div class="card space cbb">
+                          <div class=" space card-body">
+                              <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                              <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
+                              <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
+                              <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
+                              <p class="card-text">"Being an anti-racist requires persistent self-awareness, constant self-criticism,and self-examination."</p>
+                        
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-5 cbb">
+                    <div class="card space cbb ">
+                        <div class=" space card-body">
+                            <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                            <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
+                            <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
+                            <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
+                            <p class="card-text">"Being an anti-racist requires persistent self-awareness, constant self-criticism,and self-examination."</p>
+                      
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 cbb" style="padding-top: 10px;">
+                  <div class="card space cbb ">
+                      <div class=" space card-body">
+                          <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                          <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
+                          <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
+                          <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
+                          <p class="card-text">"Being an anti-racist requires persistent self-awareness, constant self-criticism,and self-examination."</p>
+                    
+                          
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+              <h3 class="space">10.00 am</h3>
+              <div class="row">
+                <div class="col-md-5 cbb">
+                    <div class="card space cbb">
+                        <div class=" space card-body">
+                            <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                            <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
+                            <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
+                            <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
+                            <p class="card-text">"Being an anti-racist requires persistent self-awareness, constant self-criticism,and self-examination."</p>
+                      
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 cbb">
+                  <div class="card space cbb">
+                      <div class=" space card-body">
+                          <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                          <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
+                          <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
+                          <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
+                          <p class="card-text">"Being an anti-racist requires persistent self-awareness, constant self-criticism,and self-examination."</p>
+                    
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5 cbb" style="padding-top: 10px;">
+                <div class="card space cbb">
+                    <div class=" space card-body">
+                        <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                        <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
+                        <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
+                        <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
+                        <p class="card-text">"Being an anti-racist requires persistent self-awareness, constant self-criticism,and self-examination."</p>
+                  
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+            </div>
+            <div *ngIf="demand">
+                <h3>demand</h3>
+                <h4>Live Now</h4>
+            </div>
+            <div *ngIf="team">
+                <h3>team Activities</h3>
+                <h4>Live Now</h4>
+            </div>
+            <div *ngIf="agenda">
+                <h3>Agenda</h3>
+                <h4>Live Now</h4>
+            </div>
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+        </div>
+    </div>
+</div>
+    
+    
+  
+    
+    

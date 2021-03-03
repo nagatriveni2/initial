@@ -1,0 +1,20 @@
+
+
+
+
+div {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(153, 153, 238, 0.8)),
+        url(https://lh3.googleusercontent.com/-8DdxSN-S8lE/YD4WvgVkI5I/AAAAAAABPX4/jrAzijW1twsjqH6CEzbnMaL_c8IFja_MQCK8BGAsYHg/s0/2021-03-02.png);
+    
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-attachment: fixed;
+    
+}
+@media screen and (max-width: 768px) {
+    div{
+        height:100vh;
+    }
+}
