@@ -9,12 +9,31 @@ div {
     
     background-size: cover;
     background-position: center;
-    height: 70vh;
+   
     background-attachment: fixed;
     
 }
+
+
+
 @media screen and (max-width: 768px) {
     div{
-        height:100vh;
+        height:110vh;
+    }
+}
+@media screen and (max-width: 550px) {
+    div{
+        height:130vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    div{
+        height:130vh;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    div{
+        height:160vh;
     }
 }

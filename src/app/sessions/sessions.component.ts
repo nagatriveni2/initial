@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sessions.component.css']
 })
 export class SessionsComponent implements OnInit {
-  live:boolean=false;
+  live:boolean=true;
   demand:boolean=false;
   team:boolean=false;
   agenda:boolean=false;
+  tog3:boolean =true;
+  tog4:boolean =true;
+  tog5:boolean =true;
   constructor() { }
 
   ngOnInit(): void {
@@ -37,5 +40,20 @@ callagenda(){
   this.live=false;
   this.demand=false;
   this.team=false;
+}
+
+change3(){
+  this.tog3=!this.tog3;
+
+}
+
+change4(){
+  this.tog4=!this.tog4;
+
+}
+
+change5(){
+  this.tog5=!this.tog5;
+
 }
 }

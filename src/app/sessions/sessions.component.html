@@ -4,7 +4,7 @@
     <p>Description Goes Here</p>
     </div>
     <div class="row" style="background-color: white;">
-        <div class="col-md-4 cbb" >
+        <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 cbb" >
             <div class="menu-card">
                 <h4 class="t" style="text-align: left;">Filters</h4>
                 <hr>
@@ -64,15 +64,13 @@
                 
             </div>
         </div>
-        <div class="col-md-8 tspace">
-            <nav class="navbar  navbar-light">
-                <a  class="navbar-brand" (click)="calllive()">Live Sessions
-
-                </a>
-                <a class="navbar-brand" (click)="calldemand()" >On Demand</a>
-                <a class="navbar-brand" (click)="callteam()" >Team Activities</a>
-                <a class="navbar-brand" (click)="callagenda()">My Agenda</a>
-                <input class="space cbb search "   type="search" placeholder="Search..">
+        <div class="col-sm-8 col-md-9 col-lg-8 col-xl-6 tspace">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand col-2" (click)="calllive()">Live Sessions</a>
+                <a class="navbar-brand col-2" (click)="calldemand()" >On Demand</a>
+                <a class="navbar-brand col-2" (click)="callteam()" >Team Activities</a>
+                <a class="navbar-brand col-2" (click)="callagenda()">My Agenda</a>
+                <input class="space cbb search col-2"   type="search" placeholder="Search..">
             
             </nav>
             <div *ngIf="live">
@@ -80,10 +78,13 @@
                 <h4>February 16</h4>
                 <h3>Live Now</h3>
                 <div class="row">
-                  <div class="col-md-5 cbb">
+                  <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11">
                       <div class="card space cbb">
                           <div class=" space card-body">
-                              <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                              <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button>
+                                <button class="btn noHover cbb">americas</button> 
+                                <i class="bi isize cbb pull-right" *ngIf=tog3 [innerText]="'+'" (click)="change3()"></i>
+                                <i class="bi isize cbb pull-right" [ngClass]="{'bi-check2':!tog3}" (click)="change3()" ></i></h5>
                               <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
                               <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
                               <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
@@ -93,10 +94,13 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-5 cbb">
+                  <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 cbb">
                     <div class="card space cbb ">
                         <div class=" space card-body">
-                            <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                            <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button>
+                                <button class="btn noHover cbb">americas</button>
+                                <i class="bi isize cbb pull-right" *ngIf=tog4 [innerText]="'+'" (click)="change4()"></i>
+                                <i class="bi isize cbb pull-right" [ngClass]="{'bi-check2':!tog4}" (click)="change4()" ></i></h5>
                             <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
                             <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
                             <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
@@ -106,10 +110,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 cbb" style="padding-top: 10px;">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11" style="padding-top: 10px;">
                   <div class="card space cbb ">
                       <div class=" space card-body">
-                          <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
+                          <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button>
+                            <button class="btn noHover cbb">americas</button> 
+                            <i class="bi isize cbb pull-right" *ngIf=tog5 [innerText]="'+'" (click)="change5()"></i>
+                            <i class="bi isize cbb pull-right" [ngClass]="{'bi-check2':!tog5}" (click)="change5()" ></i></h5>
                           <h5 class="card-subtitle ts mb-2 text-muted">Session title</h5>
                           <h5 class="card-subtitle ts mb-2 text-muted">Speaker Name</h5>
                           <h6 class="space"><i class="bi bi-clock-history"></i>9.00am-10.00am PST</h6>
@@ -123,7 +130,7 @@
 
               <h3 class="space">10.00 am</h3>
               <div class="row">
-                <div class="col-md-5 cbb">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 cbb">
                     <div class="card space cbb">
                         <div class=" space card-body">
                             <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
@@ -136,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 cbb">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 cbb">
                   <div class="card space cbb">
                       <div class=" space card-body">
                           <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
@@ -149,7 +156,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-md-5 cbb" style="padding-top: 10px;">
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-11 cbb">
                 <div class="card space cbb">
                     <div class=" space card-body">
                         <h5 class="card-title align-left"><button class="btn noHover hc">Leading yourself</button><button class="btn noHover cbb">americas</button> <i class="bi isize cbb bi-plus pull-right"></i></h5>
