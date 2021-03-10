@@ -13,6 +13,9 @@ export class SessionsComponent implements OnInit {
   tog3:boolean =true;
   tog4:boolean =true;
   tog5:boolean =true;
+  tog6:boolean =true;
+  tog7:boolean =true;
+  tog8:boolean =true;
   constructor() { }
 
   ngOnInit(): void {
@@ -54,6 +57,18 @@ change4(){
 
 change5(){
   this.tog5=!this.tog5;
+
+}
+change6(){
+  this.tog6=!this.tog6;
+
+}
+change7(){
+  this.tog7=!this.tog7;
+
+}
+change8(){
+  this.tog8=!this.tog8;
 
 }
 }

@@ -1,10 +1,6 @@
-
-
-
-
 div {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(153, 153, 238, 0.8)),
+    #0d274d),
         url(https://lh3.googleusercontent.com/-8DdxSN-S8lE/YD4WvgVkI5I/AAAAAAABPX4/jrAzijW1twsjqH6CEzbnMaL_c8IFja_MQCK8BGAsYHg/s0/2021-03-02.png);
     
     background-size: cover;
@@ -18,22 +14,27 @@ div {
 
 @media screen and (max-width: 768px) {
     div{
-        height:110vh;
+        height:60vh;
+    }
+}
+@media screen and (max-width: 650px) {
+    div{
+        height:73vh;
     }
 }
 @media screen and (max-width: 550px) {
     div{
-        height:130vh;
+        height:75vh;
     }
 }
 @media screen and (max-width: 400px) {
     div{
-        height:130vh;
+        height:80vh;
     }
 }
 
 @media screen and (max-width: 300px) {
     div{
-        height:160vh;
+        height:100vh;
     }
 }

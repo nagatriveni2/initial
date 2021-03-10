@@ -7,7 +7,11 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'initial';
+  navbarOpen = false;
 
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   navFixed: boolean = false;
 private scrollOffset: number = 70;
 

@@ -1,17 +1,179 @@
 
-
 .navbar {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1001;  
-   
-  }
-  
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1001;  
+ 
+}
+
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+body{
+    background-color:#0d274d ;
+}
+.colour{
+    background-color: #0d274d ;
+
+}
+.tc{
+color:#d6dae2;
+}
+.t{
+    color: white;
+
+}
+.ts{
+    color: #00bceb;
+}
+a:hover {
+    background-color: #304d8b;
   }
+
+  .bs{
+    border-radius: 20px;
+    border:1px;
+    background-color: #00bceb;
+    color: #0d274d;
+  }
+.br{
+    border-radius: 20px;
+    border:1px;
+    background-color: transparent;
+    
+    border: 2px solid #00bceb;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.br:hover{
+    background-color: #00bceb;
+}
+
+.t.hover{
+    color: #00bceb;
+}
+.teams{
+    color: white;
+    
+}
+
+.cont{
+    padding-left: 5%;
+    padding-top: 10px;
+}
+
+.noHover{
+    pointer-events: none;
+}
+
+.space{
+    padding-top: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.hc{
+padding-top: 4px;
+background-color: #00bceb;
+border-radius: 15px;
+}
+.cbb{
+    padding-top: 8px;
+    border-radius: 15px;
+}
+
+  .isize{
+      size: 2px;
+  }
+  .gcard{
+    background-color: transparent;
+    border-radius: 7px;
+    width:250px;
+    color: white;
+  }
+ 
+
+  .active{
+      background-color: none;
+      color: #00bceb;
+        text-decoration: underline;
+    }
+    .active:hover{
+        background-color:#0d274d ;
+    }
+
+      .tspace{
+          padding-top: 15px;
+      }
+      .st{
+          font-family:Arial, Helvetica, sans-serif ;
+          color: snow;
+      }
+      .box {
+        background-color: #0d274d;
+        color: #fff;
+        border-radius: 5px;
+        padding: 8%;
+        font-size: 150%;
+      }
+     
+.center {
+    
+    padding: 100px 0;
+    padding-left: 40px;
+    border: 5px solid #0d274d;
+    
+    
+}    
+
+
+
+
+
   
+  @media screen and (max-width: 768px) {
+    .card:hover {
+      box-shadow: 8px 28px 50px rgba(39,44,49,.05), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease;
+      transform: translate3D(0,-1px,0) scale(1.05);
+    }
+
+    .card{
+      background-color: white;
+      border-radius: 7px;
+      width:90%;
+      align-content: center;
+     
+      
+  }
+  .card-img-top{
+    width: 100%;
+
+    
+  }
+
+  header nav {
+    display: none;
+  }
+  .navbrand.hover{
+      background-color: #214083;
+  }
+ 
+  }
+  @media screen and (orientation: landscape) {
+    header nav {
+      position: fixed;
+      left: 0;
+      width: 20vw;
+    }
+  }
+
+
+
+  .navbar{background-color:#0d274d !important;}
